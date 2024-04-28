@@ -2,20 +2,12 @@ pipeline {
     agent any
     
     stages {
-        stage('Build') {
+        stage('Clean') {
             steps {
-                sh './mvnw clean'     //cleans the maven project
-                sh './mvnw compile'
-                sh './mvnw package'
+                sh './mvnw clean install'
+            }
 
-            }
-        }
-        
-        stage('Test') {
-            steps {
-                sh './mvnw test'
-            }
-        }
+
     }
 }
     
