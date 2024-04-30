@@ -15,7 +15,7 @@
     <name>Rest-Api-Unit-Test</name>
     <description>Rest-Api-Unit-Test</description>
     <properties>
-        <java.version>19</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
